@@ -15,6 +15,8 @@
 		3D11DD0C218DD32400A780ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D11DD0A218DD32400A780ED /* LaunchScreen.storyboard */; };
 		3D11DD17218DD32400A780ED /* BrokenSDUTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D11DD16218DD32400A780ED /* BrokenSDUTests.swift */; };
 		3D11DD22218DD32400A780ED /* BrokenSDUUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D11DD21218DD32400A780ED /* BrokenSDUUITests.swift */; };
+		3DE4C2D621917C8000FE6C6E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DE4C2D521917C8000FE6C6E /* CoreLocation.framework */; };
+		3DE4C2D821917CB200FE6C6E /* BeaconTestController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE4C2D721917CB200FE6C6E /* BeaconTestController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		3D11DD1D218DD32400A780ED /* BrokenSDUUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrokenSDUUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D11DD21218DD32400A780ED /* BrokenSDUUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrokenSDUUITests.swift; sourceTree = "<group>"; };
 		3D11DD23218DD32400A780ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DE4C2D521917C8000FE6C6E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		3DE4C2D721917CB200FE6C6E /* BeaconTestController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeaconTestController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DE4C2D621917C8000FE6C6E /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +88,7 @@
 				3D11DD15218DD32400A780ED /* BrokenSDUTests */,
 				3D11DD20218DD32400A780ED /* BrokenSDUUITests */,
 				3D11DCFC218DD32000A780ED /* Products */,
+				3DE4C2D421917C8000FE6C6E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				3D11DCFE218DD32000A780ED /* AppDelegate.swift */,
+				3DE4C2D721917CB200FE6C6E /* BeaconTestController.swift */,
 				3D11DD00218DD32000A780ED /* ViewController.swift */,
 				3D11DD02218DD32000A780ED /* Main.storyboard */,
 				3D11DD08218DD32400A780ED /* Assets.xcassets */,
@@ -126,6 +133,14 @@
 				3D11DD23218DD32400A780ED /* Info.plist */,
 			);
 			path = BrokenSDUUITests;
+			sourceTree = "<group>";
+		};
+		3DE4C2D421917C8000FE6C6E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3DE4C2D521917C8000FE6C6E /* CoreLocation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,6 +275,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D11DD07218DD32000A780ED /* BrokenSDU.xcdatamodeld in Sources */,
+				3DE4C2D821917CB200FE6C6E /* BeaconTestController.swift in Sources */,
 				3D11DD01218DD32000A780ED /* ViewController.swift in Sources */,
 				3D11DCFF218DD32000A780ED /* AppDelegate.swift in Sources */,
 			);
