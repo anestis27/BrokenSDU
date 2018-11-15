@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		003527142199F42B0029F24B /* coffee.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 003527132199F42B0029F24B /* coffee.jpg */; };
-		003527162199FF5E0029F24B /* ReportPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003527152199FF5E0029F24B /* ReportPageViewController.swift */; };
 		003D4DA221999CF200C6D9FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D11DD02218DD32000A780ED /* Main.storyboard */; };
 		003D4DAA2199B87700C6D9FA /* RegisterPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003D4DA92199B87700C6D9FA /* RegisterPageViewController.swift */; };
 		006A40CF2199CB1B0097BD3F /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006A40CE2199CB1B0097BD3F /* LogInViewController.swift */; };
@@ -44,7 +43,6 @@
 
 /* Begin PBXFileReference section */
 		003527132199F42B0029F24B /* coffee.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = coffee.jpg; path = ../../../../Downloads/coffee.jpg; sourceTree = "<group>"; };
-		003527152199FF5E0029F24B /* ReportPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportPageViewController.swift; sourceTree = "<group>"; };
 		003D4DA92199B87700C6D9FA /* RegisterPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPageViewController.swift; sourceTree = "<group>"; };
 		006A40CE2199CB1B0097BD3F /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		006A40D02199CE570097BD3F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -155,7 +153,6 @@
 				3D11DD05218DD32000A780ED /* BrokenSDU.xcdatamodeld */,
 				006A40CE2199CB1B0097BD3F /* LogInViewController.swift */,
 				006A40D22199DFA00097BD3F /* MainFrameViewController.swift */,
-				003527152199FF5E0029F24B /* ReportPageViewController.swift */,
 			);
 			path = BrokenSDU;
 			sourceTree = "<group>";
@@ -424,7 +421,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				003D4DAA2199B87700C6D9FA /* RegisterPageViewController.swift in Sources */,
-				003527162199FF5E0029F24B /* ReportPageViewController.swift in Sources */,
 				006A40D32199DFA00097BD3F /* MainFrameViewController.swift in Sources */,
 				3D11DD07218DD32000A780ED /* BrokenSDU.xcdatamodeld in Sources */,
 				006A40CF2199CB1B0097BD3F /* LogInViewController.swift in Sources */,
