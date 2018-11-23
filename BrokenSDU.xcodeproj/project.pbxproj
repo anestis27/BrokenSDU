@@ -15,6 +15,12 @@
 		3D11DD0C218DD32400A780ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D11DD0A218DD32400A780ED /* LaunchScreen.storyboard */; };
 		3D11DD17218DD32400A780ED /* BrokenSDUTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D11DD16218DD32400A780ED /* BrokenSDUTests.swift */; };
 		3D11DD22218DD32400A780ED /* BrokenSDUUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D11DD21218DD32400A780ED /* BrokenSDUUITests.swift */; };
+		CA885F1321A81FC30096DF2A /* ReportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA885F1221A81FC30096DF2A /* ReportView.swift */; };
+		CA885F1521A820150096DF2A /* ReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA885F1421A820150096DF2A /* ReportViewController.swift */; };
+		CA885F1721A82AEA0096DF2A /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA885F1621A82AEA0096DF2A /* RoundedButton.swift */; };
+		CA885F1B21A852800096DF2A /* HistoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA885F1A21A852800096DF2A /* HistoryTableViewController.swift */; };
+		CA885F1D21A852C10096DF2A /* ReportCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA885F1C21A852C10096DF2A /* ReportCell.swift */; };
+		CABE41A82191B02200158845 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABE41A72191B02200158845 /* DataController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +55,12 @@
 		3D11DD1D218DD32400A780ED /* BrokenSDUUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrokenSDUUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D11DD21218DD32400A780ED /* BrokenSDUUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrokenSDUUITests.swift; sourceTree = "<group>"; };
 		3D11DD23218DD32400A780ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA885F1221A81FC30096DF2A /* ReportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportView.swift; sourceTree = "<group>"; };
+		CA885F1421A820150096DF2A /* ReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportViewController.swift; sourceTree = "<group>"; };
+		CA885F1621A82AEA0096DF2A /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		CA885F1A21A852800096DF2A /* HistoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewController.swift; sourceTree = "<group>"; };
+		CA885F1C21A852C10096DF2A /* ReportCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportCell.swift; sourceTree = "<group>"; };
+		CABE41A72191B02200158845 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +118,12 @@
 				3D11DD0A218DD32400A780ED /* LaunchScreen.storyboard */,
 				3D11DD0D218DD32400A780ED /* Info.plist */,
 				3D11DD05218DD32000A780ED /* BrokenSDU.xcdatamodeld */,
+				CABE41A72191B02200158845 /* DataController.swift */,
+				CA885F1221A81FC30096DF2A /* ReportView.swift */,
+				CA885F1421A820150096DF2A /* ReportViewController.swift */,
+				CA885F1621A82AEA0096DF2A /* RoundedButton.swift */,
+				CA885F1A21A852800096DF2A /* HistoryTableViewController.swift */,
+				CA885F1C21A852C10096DF2A /* ReportCell.swift */,
 			);
 			path = BrokenSDU;
 			sourceTree = "<group>";
@@ -260,8 +278,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D11DD07218DD32000A780ED /* BrokenSDU.xcdatamodeld in Sources */,
+				CA885F1B21A852800096DF2A /* HistoryTableViewController.swift in Sources */,
+				CABE41A82191B02200158845 /* DataController.swift in Sources */,
+				CA885F1521A820150096DF2A /* ReportViewController.swift in Sources */,
 				3D11DD01218DD32000A780ED /* ViewController.swift in Sources */,
+				CA885F1721A82AEA0096DF2A /* RoundedButton.swift in Sources */,
+				CA885F1321A81FC30096DF2A /* ReportView.swift in Sources */,
 				3D11DCFF218DD32000A780ED /* AppDelegate.swift in Sources */,
+				CA885F1D21A852C10096DF2A /* ReportCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,7 +461,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KNCE8QJZWW;
 				INFOPLIST_FILE = BrokenSDU/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -454,7 +480,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KNCE8QJZWW;
 				INFOPLIST_FILE = BrokenSDU/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
