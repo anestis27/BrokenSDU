@@ -7,11 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		003527142199F42B0029F24B /* coffee.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 003527132199F42B0029F24B /* coffee.jpg */; };
 		003D4DA221999CF200C6D9FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D11DD02218DD32000A780ED /* Main.storyboard */; };
 		003D4DAA2199B87700C6D9FA /* RegisterPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003D4DA92199B87700C6D9FA /* RegisterPageViewController.swift */; };
 		006A40CF2199CB1B0097BD3F /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006A40CE2199CB1B0097BD3F /* LogInViewController.swift */; };
-		006A40D12199CE570097BD3F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 006A40D02199CE570097BD3F /* GoogleService-Info.plist */; };
 		006A40D32199DFA00097BD3F /* MainFrameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006A40D22199DFA00097BD3F /* MainFrameViewController.swift */; };
 		23B21875969B1AAF56BA3935 /* Pods_BrokenSDU.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE356601218DEED3D6A4FBAA /* Pods_BrokenSDU.framework */; };
 		3D11DCFF218DD32000A780ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D11DCFE218DD32000A780ED /* AppDelegate.swift */; };
@@ -21,6 +19,7 @@
 		3D11DD17218DD32400A780ED /* BrokenSDUTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D11DD16218DD32400A780ED /* BrokenSDUTests.swift */; };
 		3D11DD22218DD32400A780ED /* BrokenSDUUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D11DD21218DD32400A780ED /* BrokenSDUUITests.swift */; };
 		5B29C97C35B0559E2C980331 /* Pods_BrokenSDUTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 743CAE05BCCEE900D7D722BD /* Pods_BrokenSDUTests.framework */; };
+		CA52C38721AC79B200ECC6F8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CA52C38621AC79B200ECC6F8 /* GoogleService-Info.plist */; };
 		ECB38E350ECCF33CD52F056D /* Pods_BrokenSDUUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA99EF58AE46B56BA393156E /* Pods_BrokenSDUUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,10 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		003527132199F42B0029F24B /* coffee.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = coffee.jpg; path = ../../../../Downloads/coffee.jpg; sourceTree = "<group>"; };
 		003D4DA92199B87700C6D9FA /* RegisterPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPageViewController.swift; sourceTree = "<group>"; };
 		006A40CE2199CB1B0097BD3F /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
-		006A40D02199CE570097BD3F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		006A40D22199DFA00097BD3F /* MainFrameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFrameViewController.swift; sourceTree = "<group>"; };
 		1849FDA8D37137D47C2FE3E3 /* Pods-BrokenSDUUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrokenSDUUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BrokenSDUUITests/Pods-BrokenSDUUITests.release.xcconfig"; sourceTree = "<group>"; };
 		3D11DCFB218DD32000A780ED /* BrokenSDU.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrokenSDU.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -67,6 +64,7 @@
 		743CAE05BCCEE900D7D722BD /* Pods_BrokenSDUTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BrokenSDUTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F7718DDACE31BA0F01369B7 /* Pods-BrokenSDUUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrokenSDUUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BrokenSDUUITests/Pods-BrokenSDUUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		AE356601218DEED3D6A4FBAA /* Pods_BrokenSDU.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BrokenSDU.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA52C38621AC79B200ECC6F8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F3D9661531C626BD50A111B9 /* Pods-BrokenSDUTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrokenSDUTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BrokenSDUTests/Pods-BrokenSDUTests.debug.xcconfig"; sourceTree = "<group>"; };
 		FA99EF58AE46B56BA393156E /* Pods_BrokenSDUUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BrokenSDUUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -99,14 +97,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		003527122199F4160029F24B /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				003527132199F42B0029F24B /* coffee.jpg */,
-			);
-			path = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		3688DDB21042B8527CE6DFC6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -142,11 +132,10 @@
 		3D11DCFD218DD32000A780ED /* BrokenSDU */ = {
 			isa = PBXGroup;
 			children = (
-				006A40D02199CE570097BD3F /* GoogleService-Info.plist */,
+				CA52C38621AC79B200ECC6F8 /* GoogleService-Info.plist */,
 				3D11DD0A218DD32400A780ED /* LaunchScreen.storyboard */,
 				3D11DD08218DD32400A780ED /* Assets.xcassets */,
 				3D11DCFE218DD32000A780ED /* AppDelegate.swift */,
-				003527122199F4160029F24B /* Supporting Files */,
 				3D11DD02218DD32000A780ED /* Main.storyboard */,
 				003D4DA92199B87700C6D9FA /* RegisterPageViewController.swift */,
 				3D11DD0D218DD32400A780ED /* Info.plist */,
@@ -297,8 +286,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				003D4DA221999CF200C6D9FA /* Main.storyboard in Resources */,
-				006A40D12199CE570097BD3F /* GoogleService-Info.plist in Resources */,
-				003527142199F42B0029F24B /* coffee.jpg in Resources */,
+				CA52C38721AC79B200ECC6F8 /* GoogleService-Info.plist in Resources */,
 				3D11DD0C218DD32400A780ED /* LaunchScreen.storyboard in Resources */,
 				3D11DD09218DD32400A780ED /* Assets.xcassets in Resources */,
 			);

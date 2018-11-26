@@ -59,7 +59,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="coffee.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="V4y-eQ-ESV">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="coffee" translatesAutoresizingMaskIntoConstraints="NO" id="V4y-eQ-ESV">
                                 <rect key="frame" x="75" y="78" width="229" height="155"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -256,6 +256,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="coffee.jpg" width="800" height="566"/>
+        <image name="coffee" width="395" height="280"/>
     </resources>
 </document>
