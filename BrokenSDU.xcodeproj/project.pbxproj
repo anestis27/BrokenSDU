@@ -13,7 +13,8 @@
 		006A40D32199DFA00097BD3F /* MainFrameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006A40D22199DFA00097BD3F /* MainFrameViewController.swift */; };
 		00BA026821ADB086002A2CD4 /* FireBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00BA026721ADB086002A2CD4 /* FireBase.swift */; };
 		00FCD99F21AEAC6A00B9DA35 /* beacons.json in Resources */ = {isa = PBXBuildFile; fileRef = 00FCD99E21AEAC6A00B9DA35 /* beacons.json */; };
-		00FCD9A121AEAC8900B9DA35 /* RoomDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00FCD9A021AEAC8900B9DA35 /* RoomDetails.swift */; };
+		00FCD9A121AEAC8900B9DA35 /* RoomDetailss.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00FCD9A021AEAC8900B9DA35 /* RoomDetailss.swift */; };
+		00FCD9A321AEBDDF00B9DA35 /* BeaconReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00FCD9A221AEBDDF00B9DA35 /* BeaconReader.swift */; };
 		23B21875969B1AAF56BA3935 /* Pods_BrokenSDU.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE356601218DEED3D6A4FBAA /* Pods_BrokenSDU.framework */; };
 		3D11DCFF218DD32000A780ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D11DCFE218DD32000A780ED /* AppDelegate.swift */; };
 		3D11DD07218DD32000A780ED /* BrokenSDU.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3D11DD05218DD32000A780ED /* BrokenSDU.xcdatamodeld */; };
@@ -55,7 +56,8 @@
 		006A40D22199DFA00097BD3F /* MainFrameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFrameViewController.swift; sourceTree = "<group>"; };
 		00BA026721ADB086002A2CD4 /* FireBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireBase.swift; sourceTree = "<group>"; };
 		00FCD99E21AEAC6A00B9DA35 /* beacons.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = beacons.json; sourceTree = "<group>"; };
-		00FCD9A021AEAC8900B9DA35 /* RoomDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomDetails.swift; sourceTree = "<group>"; };
+		00FCD9A021AEAC8900B9DA35 /* RoomDetailss.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomDetailss.swift; sourceTree = "<group>"; };
+		00FCD9A221AEBDDF00B9DA35 /* BeaconReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeaconReader.swift; sourceTree = "<group>"; };
 		1849FDA8D37137D47C2FE3E3 /* Pods-BrokenSDUUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrokenSDUUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BrokenSDUUITests/Pods-BrokenSDUUITests.release.xcconfig"; sourceTree = "<group>"; };
 		3D11DCFB218DD32000A780ED /* BrokenSDU.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrokenSDU.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D11DCFE218DD32000A780ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -168,7 +170,8 @@
 				CA885F1A21A852800096DF2A /* HistoryTableViewController.swift */,
 				CA885F1C21A852C10096DF2A /* ReportCell.swift */,
 				00BA026721ADB086002A2CD4 /* FireBase.swift */,
-				00FCD9A021AEAC8900B9DA35 /* RoomDetails.swift */,
+				00FCD9A021AEAC8900B9DA35 /* RoomDetailss.swift */,
+				00FCD9A221AEBDDF00B9DA35 /* BeaconReader.swift */,
 			);
 			path = BrokenSDU;
 			sourceTree = "<group>";
@@ -460,10 +463,11 @@
 				CABE41A82191B02200158845 /* DataController.swift in Sources */,
 				00BA026821ADB086002A2CD4 /* FireBase.swift in Sources */,
 				CA885F1521A820150096DF2A /* ReportViewController.swift in Sources */,
-				00FCD9A121AEAC8900B9DA35 /* RoomDetails.swift in Sources */,
+				00FCD9A121AEAC8900B9DA35 /* RoomDetailss.swift in Sources */,
 				CA885F1721A82AEA0096DF2A /* RoundedButton.swift in Sources */,
 				CA885F1321A81FC30096DF2A /* ReportView.swift in Sources */,
 				3D11DCFF218DD32000A780ED /* AppDelegate.swift in Sources */,
+				00FCD9A321AEBDDF00B9DA35 /* BeaconReader.swift in Sources */,
 				CA885F1D21A852C10096DF2A /* ReportCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

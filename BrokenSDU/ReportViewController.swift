@@ -44,6 +44,12 @@ class ReportViewController: UIViewController, UIImagePickerControllerDelegate, U
         
         room = "168"
         
+        
+        //var a :BeaconReader
+        //a = BeaconReader.init()
+        //print("aaaaaaaaaaaaaaaaaaaaaaaaaa: \(a.map)")
+        
+        
         let ans = FireBase.createReport(description: (view_?.descriptionTextField.text)! ,room: (room)!,timestamp: Date() , title: (view_?.titleTextField.text)!, userId: userId)
 
         
