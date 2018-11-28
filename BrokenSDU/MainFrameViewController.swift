@@ -11,6 +11,8 @@ import FirebaseAuth
 
 class MainFrameViewController: UIViewController {
     
+    @IBOutlet weak var coinsTextView: UILabel!
+    
     @IBAction func logOutButton(_ sender: Any) {
         do{
             try Auth.auth().signOut()
@@ -22,5 +24,7 @@ class MainFrameViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    }
+        var coins = FireBase.getCoins()
+        coinsTextView.text = "You have "+coins+"$"
+        print("Cached document22 dattta: \(coins)")    }
 }
