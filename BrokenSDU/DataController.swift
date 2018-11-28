@@ -8,7 +8,11 @@
 
 import UIKit
 import CoreData
+import Firebase
+
 class DataController: NSObject {
+    
+    
     var persistentContainer: NSPersistentContainer
     var managedObjectContext: NSManagedObjectContext
     init(completionClosure: @escaping () -> ()) {

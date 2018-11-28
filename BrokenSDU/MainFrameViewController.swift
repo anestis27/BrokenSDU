@@ -10,7 +10,7 @@ import UIKit
 import FirebaseAuth
 
 class MainFrameViewController: UIViewController {
-
+    
     @IBAction func logOutButton(_ sender: Any) {
         do{
             try Auth.auth().signOut()

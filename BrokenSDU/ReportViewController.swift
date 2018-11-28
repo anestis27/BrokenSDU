@@ -7,13 +7,17 @@
 //
 
 import UIKit
+import Firebase
 
 class ReportViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     var dataController: DataController?
     var view_: ReportView?
-    var userId = "userId"
+    var userId = FireBase.getUserID()
     var room: String?
+    //var ref: DatabaseReference!
     
+    //ref = Database.database().reference()
+
     override func viewDidLoad() {
         view_ = self.view as? ReportView
     }
@@ -38,6 +42,21 @@ class ReportViewController: UIViewController, UIImagePickerControllerDelegate, U
         let _ = dataController?.createReport(description: (view_?.descriptionTextField.text)!, image: (view_?.imageView.image?.pngData())!, room: (room)!, timestamp: Date(), title: (view_?.titleTextField.text)!, userId: userId)
         dataController?.saveContext()
         
-        // TODO: probably we wan't to segue somewhere after this
+        room = "168"
+        
+        let ans = FireBase.createReport(description: (view_?.descriptionTextField.text)! ,room: (room)!,timestamp: Date() , title: (view_?.titleTextField.text)!, userId: userId)
+
+        
+        if (ans){
+            let alert = UIAlertController(title:"Message",message: "Your report is submitted", preferredStyle:UIAlertController.Style.alert);
+            let okAction = UIAlertAction (title:"Ok", style: UIAlertAction.Style.default, handler:nil);
+            alert.addAction(okAction);
+            self.present(alert, animated:true, completion:nil);
+        }else{
+            let alert = UIAlertController(title:"Alert",message: "Something went wrong!", preferredStyle:UIAlertController.Style.alert);
+            let okAction = UIAlertAction (title:"Ok", style: UIAlertAction.Style.default, handler:nil);
+            alert.addAction(okAction);
+            self.present(alert, animated:true, completion:nil);
+        }
     }
 }
