@@ -8,10 +8,14 @@
 
 import UIKit
 import CoreData
-class DataController: NSObject {
+class DataController {
+    
     var persistentContainer: NSPersistentContainer
     var managedObjectContext: NSManagedObjectContext
-    init(completionClosure: @escaping () -> ()) {
+    
+    static let instance = DataController(completionClosure: {})
+    
+    private init(completionClosure: @escaping () -> ()) {
         persistentContainer = NSPersistentContainer(name: "BrokenSDU")
         persistentContainer.loadPersistentStores() { (description, error) in
             if let error = error {
@@ -35,6 +39,19 @@ class DataController: NSObject {
         report.timestamp = timestamp
         report.title = title
         report.userId = userId
+        
+        return report
+    }
+    
+    func createReport(dict: [String: String], image: Data) -> Report {
+        let report = NSEntityDescription.insertNewObject(forEntityName: "Report", into: managedObjectContext) as! Report
+        report.description_ = dict["description"]
+        report.image = image
+        report.room = dict["room"]
+        let dateFormatter = DateFormatter()
+        report.timestamp = dateFormatter.date(from: dict["timestamp"]!)
+        report.title = dict["title"]
+        report.userId = dict["userId"]
         
         return report
     }

@@ -7,15 +7,18 @@
 //
 
 import UIKit
+import Firebase
 
 class ReportViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
-    var dataController: DataController?
+    var dataController: DataControllerProtocol!
     var view_: ReportView?
-    var userId = "userId"
+    var userId = Auth.auth().currentUser!.uid
     var room: String?
     
     override func viewDidLoad() {
         view_ = self.view as? ReportView
+        dataController = FirebaseDataController.instance
+        room = "U140"
     }
     
     @IBAction func takePicture() {
@@ -35,9 +38,8 @@ class ReportViewController: UIViewController, UIImagePickerControllerDelegate, U
     }
     
     @IBAction func submitReport() {
-        let _ = dataController?.createReport(description: (view_?.descriptionTextField.text)!, image: (view_?.imageView.image?.pngData())!, room: (room)!, timestamp: Date(), title: (view_?.titleTextField.text)!, userId: userId)
-        dataController?.saveContext()
-        
-        // TODO: probably we wan't to segue somewhere after this
+        let report = dataController.createReport(description: (view_?.descriptionTextField.text)!, image: (view_?.imageView.image?.jpegData(compressionQuality: 0.4))!, room: (view_?.roomTextField.text)!, timestamp: Date(), title: (view_?.titleTextField.text)!, userId: userId)
+        dataController.saveReport(report: report)
+        self.dismiss(animated: true, completion: nil)
     }
 }

@@ -10,11 +10,9 @@ import UIKit
 import CoreData
 
 class ViewController: UIViewController {
-    var dataController: DataController?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        dataController = DataController(completionClosure: {})
         self.performSegue(withIdentifier: "loginView", sender: nil)
     }
 }

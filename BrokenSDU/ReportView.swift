@@ -14,4 +14,5 @@ class ReportView: UIView {
     @IBOutlet weak var takePictureButton: RoundedButton!
     @IBOutlet weak var submitReportButton: RoundedButton!
     @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var roomTextField: UITextField!
 }

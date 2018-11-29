@@ -37,13 +37,14 @@ class LogInViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         if Auth.auth().currentUser != nil {
-            self.presentMainFrameScreen();
+            self.presentMainFrameScreen()
         }
     }
     
     func presentMainFrameScreen(){
         let st:UIStoryboard = UIStoryboard(name: "Main", bundle: nil);
         let mainUI:MainFrameViewController = st.instantiateViewController(withIdentifier: "MainFrameViewController") as! MainFrameViewController
-        self.present(mainUI, animated:  true, completion: nil);
+        let navigationController = UINavigationController(rootViewController: mainUI)
+        self.present(navigationController, animated:  true, completion: nil)
     }
 }

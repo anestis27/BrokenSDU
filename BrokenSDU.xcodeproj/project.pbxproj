@@ -21,13 +21,16 @@
 		3D11DD22218DD32400A780ED /* BrokenSDUUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D11DD21218DD32400A780ED /* BrokenSDUUITests.swift */; };
 		5B29C97C35B0559E2C980331 /* Pods_BrokenSDUTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 743CAE05BCCEE900D7D722BD /* Pods_BrokenSDUTests.framework */; };
 		CA52C38721AC79B200ECC6F8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CA52C38621AC79B200ECC6F8 /* GoogleService-Info.plist */; };
-		ECB38E350ECCF33CD52F056D /* Pods_BrokenSDUUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA99EF58AE46B56BA393156E /* Pods_BrokenSDUUITests.framework */; };
+		CA649EE621AF01700096E2BB /* DataControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA649EE521AF01700096E2BB /* DataControllerProtocol.swift */; };
+		CA649EE821AF049B0096E2BB /* FirebaseDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA649EE721AF049B0096E2BB /* FirebaseDataController.swift */; };
+		CA649EEA21AF07FA0096E2BB /* Report.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA649EE921AF07FA0096E2BB /* Report.swift */; };
 		CA885F1321A81FC30096DF2A /* ReportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA885F1221A81FC30096DF2A /* ReportView.swift */; };
 		CA885F1521A820150096DF2A /* ReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA885F1421A820150096DF2A /* ReportViewController.swift */; };
 		CA885F1721A82AEA0096DF2A /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA885F1621A82AEA0096DF2A /* RoundedButton.swift */; };
 		CA885F1B21A852800096DF2A /* HistoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA885F1A21A852800096DF2A /* HistoryTableViewController.swift */; };
 		CA885F1D21A852C10096DF2A /* ReportCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA885F1C21A852C10096DF2A /* ReportCell.swift */; };
 		CABE41A82191B02200158845 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABE41A72191B02200158845 /* DataController.swift */; };
+		ECB38E350ECCF33CD52F056D /* Pods_BrokenSDUUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA99EF58AE46B56BA393156E /* Pods_BrokenSDUUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,14 +76,17 @@
 		9F7718DDACE31BA0F01369B7 /* Pods-BrokenSDUUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrokenSDUUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BrokenSDUUITests/Pods-BrokenSDUUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		AE356601218DEED3D6A4FBAA /* Pods_BrokenSDU.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BrokenSDU.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA52C38621AC79B200ECC6F8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		F3D9661531C626BD50A111B9 /* Pods-BrokenSDUTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrokenSDUTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BrokenSDUTests/Pods-BrokenSDUTests.debug.xcconfig"; sourceTree = "<group>"; };
-		FA99EF58AE46B56BA393156E /* Pods_BrokenSDUUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BrokenSDUUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA649EE521AF01700096E2BB /* DataControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataControllerProtocol.swift; sourceTree = "<group>"; };
+		CA649EE721AF049B0096E2BB /* FirebaseDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseDataController.swift; sourceTree = "<group>"; };
+		CA649EE921AF07FA0096E2BB /* Report.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Report.swift; sourceTree = "<group>"; };
 		CA885F1221A81FC30096DF2A /* ReportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportView.swift; sourceTree = "<group>"; };
 		CA885F1421A820150096DF2A /* ReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportViewController.swift; sourceTree = "<group>"; };
 		CA885F1621A82AEA0096DF2A /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		CA885F1A21A852800096DF2A /* HistoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewController.swift; sourceTree = "<group>"; };
 		CA885F1C21A852C10096DF2A /* ReportCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportCell.swift; sourceTree = "<group>"; };
 		CABE41A72191B02200158845 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		F3D9661531C626BD50A111B9 /* Pods-BrokenSDUTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrokenSDUTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BrokenSDUTests/Pods-BrokenSDUTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FA99EF58AE46B56BA393156E /* Pods_BrokenSDUUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BrokenSDUUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +169,9 @@
 				CA885F1621A82AEA0096DF2A /* RoundedButton.swift */,
 				CA885F1A21A852800096DF2A /* HistoryTableViewController.swift */,
 				CA885F1C21A852C10096DF2A /* ReportCell.swift */,
+				CA649EE521AF01700096E2BB /* DataControllerProtocol.swift */,
+				CA649EE721AF049B0096E2BB /* FirebaseDataController.swift */,
+				CA649EE921AF07FA0096E2BB /* Report.swift */,
 			);
 			path = BrokenSDU;
 			sourceTree = "<group>";
@@ -385,6 +394,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-BrokenSDU/Pods-BrokenSDU-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -393,6 +403,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -431,6 +442,7 @@
 			files = (
 				003D4DAA2199B87700C6D9FA /* RegisterPageViewController.swift in Sources */,
 				006A40D32199DFA00097BD3F /* MainFrameViewController.swift in Sources */,
+				CA649EE621AF01700096E2BB /* DataControllerProtocol.swift in Sources */,
 				3D11DD07218DD32000A780ED /* BrokenSDU.xcdatamodeld in Sources */,
 				006A40CF2199CB1B0097BD3F /* LogInViewController.swift in Sources */,
 				CA885F1B21A852800096DF2A /* HistoryTableViewController.swift in Sources */,
@@ -439,7 +451,9 @@
 				3D11DD01218DD32000A780ED /* ViewController.swift in Sources */,
 				CA885F1721A82AEA0096DF2A /* RoundedButton.swift in Sources */,
 				CA885F1321A81FC30096DF2A /* ReportView.swift in Sources */,
+				CA649EEA21AF07FA0096E2BB /* Report.swift in Sources */,
 				3D11DCFF218DD32000A780ED /* AppDelegate.swift in Sources */,
+				CA649EE821AF049B0096E2BB /* FirebaseDataController.swift in Sources */,
 				CA885F1D21A852C10096DF2A /* ReportCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

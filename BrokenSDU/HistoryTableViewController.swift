@@ -7,17 +7,23 @@
 //
 
 import UIKit
+import Firebase
 
-class HistoryViewControllerTableViewController: UITableViewController {
-    var dataController: DataController?
+class HistoryTableViewController: UITableViewController {
+    var dataController: DataControllerProtocol?
     var reports: [Report] = []
-    var userId = "tempUserId" //TODO: replace this with the real userId from the login module
+    var userId = Auth.auth().currentUser!.uid
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        if let reports = dataController?.loadReports(userId: userId) {
-            self.reports = reports
+        dataController = FirebaseDataController.instance
+        dataController?.loadReports(userId: userId) { report in
+            self.reports.append(report)
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+            }
         }
+        
         
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -27,8 +33,7 @@ class HistoryViewControllerTableViewController: UITableViewController {
     }
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -46,6 +51,10 @@ class HistoryViewControllerTableViewController: UITableViewController {
         cell.roomLabel.text = report.room
         
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 70
     }
 
     /*
