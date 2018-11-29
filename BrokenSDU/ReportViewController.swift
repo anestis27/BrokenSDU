@@ -8,15 +8,14 @@
 
 import UIKit
 import Firebase
+import AVFoundation
 
 class ReportViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     var dataController: DataController?
     var view_: ReportView?
     var userId = FireBase.getUserID()
     var room: String?
-    //var ref: DatabaseReference!
-    
-    //ref = Database.database().reference()
+    var audioPlayer: AVAudioPlayer?
 
     override func viewDidLoad() {
         view_ = self.view as? ReportView
@@ -44,10 +43,15 @@ class ReportViewController: UIViewController, UIImagePickerControllerDelegate, U
         
         room = "168"
         
-        
-        //var a :BeaconReader
-        //a = BeaconReader.init()
-        //print("aaaaaaaaaaaaaaaaaaaaaaaaaa: \(a.map)")
+        do {
+            if let fileURL = Bundle.main.path(forResource: "sound.mp3", ofType: nil) {
+                audioPlayer = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: fileURL))
+            } else {
+                print("No file with specified name exists")
+            }
+        } catch let error {
+            print("Can't play the audio file failed with an error \(error.localizedDescription)")
+        }
         
         
         let ans = FireBase.createReport(description: (view_?.descriptionTextField.text)! ,room: (room)!,timestamp: Date() , title: (view_?.titleTextField.text)!, userId: userId)
