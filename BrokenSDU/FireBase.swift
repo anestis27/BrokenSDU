@@ -41,7 +41,7 @@ class FireBase {
         return Auth.auth().currentUser!.uid.description
     }
     
-    static func getCoins() -> String{
+    static func getCoins(completion : @escaping (String)->()){
         var coins:String
         let docRef = Firestore.firestore().collection("users_coins").document(getUserID())
         coins = "0"
@@ -49,11 +49,11 @@ class FireBase {
             if let document = document {
                 let dataDescription = document.data()
                 coins = dataDescription?["coins"] as! String
+                completion(coins)
                 print("Cached document data: \(coins)")
             } else {
                 print("Document does not exist in cache")
             }
         }
-        return coins;
     }
 }

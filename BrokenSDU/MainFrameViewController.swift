@@ -24,7 +24,10 @@ class MainFrameViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        var coins = FireBase.getCoins()
-        coinsTextView.text = "You have "+coins+"$"
-        print("Cached document22 dattta: \(coins)")    }
+        FireBase.getCoins(completion: { coins in
+            DispatchQueue.main.async {
+                self.coinsTextView.text = "You have "+coins+"$"
+            }
+        })
+    }
 }
