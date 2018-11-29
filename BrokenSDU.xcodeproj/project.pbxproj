@@ -24,6 +24,7 @@
 		CA649EE621AF01700096E2BB /* DataControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA649EE521AF01700096E2BB /* DataControllerProtocol.swift */; };
 		CA649EE821AF049B0096E2BB /* FirebaseDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA649EE721AF049B0096E2BB /* FirebaseDataController.swift */; };
 		CA649EEA21AF07FA0096E2BB /* Report.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA649EE921AF07FA0096E2BB /* Report.swift */; };
+		CA6FEFA921B048B5003F4F4A /* sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CA6FEFA821B048B5003F4F4A /* sound.mp3 */; };
 		CA885F1321A81FC30096DF2A /* ReportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA885F1221A81FC30096DF2A /* ReportView.swift */; };
 		CA885F1521A820150096DF2A /* ReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA885F1421A820150096DF2A /* ReportViewController.swift */; };
 		CA885F1721A82AEA0096DF2A /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA885F1621A82AEA0096DF2A /* RoundedButton.swift */; };
@@ -79,6 +80,7 @@
 		CA649EE521AF01700096E2BB /* DataControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataControllerProtocol.swift; sourceTree = "<group>"; };
 		CA649EE721AF049B0096E2BB /* FirebaseDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseDataController.swift; sourceTree = "<group>"; };
 		CA649EE921AF07FA0096E2BB /* Report.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Report.swift; sourceTree = "<group>"; };
+		CA6FEFA821B048B5003F4F4A /* sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sound.mp3; sourceTree = "<group>"; };
 		CA885F1221A81FC30096DF2A /* ReportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportView.swift; sourceTree = "<group>"; };
 		CA885F1421A820150096DF2A /* ReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportViewController.swift; sourceTree = "<group>"; };
 		CA885F1621A82AEA0096DF2A /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
@@ -167,6 +169,7 @@
 				CA885F1221A81FC30096DF2A /* ReportView.swift */,
 				CA885F1421A820150096DF2A /* ReportViewController.swift */,
 				CA885F1621A82AEA0096DF2A /* RoundedButton.swift */,
+				CA6FEFA821B048B5003F4F4A /* sound.mp3 */,
 				CA885F1A21A852800096DF2A /* HistoryTableViewController.swift */,
 				CA885F1C21A852C10096DF2A /* ReportCell.swift */,
 				CA649EE521AF01700096E2BB /* DataControllerProtocol.swift */,
@@ -319,6 +322,7 @@
 				CA52C38721AC79B200ECC6F8 /* GoogleService-Info.plist in Resources */,
 				3D11DD0C218DD32400A780ED /* LaunchScreen.storyboard in Resources */,
 				3D11DD09218DD32400A780ED /* Assets.xcassets in Resources */,
+				CA6FEFA921B048B5003F4F4A /* sound.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

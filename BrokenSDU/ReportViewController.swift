@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import AVFoundation
 
 class ReportViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     var dataController: DataControllerProtocol!
@@ -35,9 +36,23 @@ class ReportViewController: UIViewController, UIImagePickerControllerDelegate, U
         picker.dismiss(animated: true, completion: nil)
     }
     
+    func playSound() {
+        do {
+            if let fileURL = Bundle.main.path(forResource: "sound.mp3", ofType: nil) {
+                let audioPlayer = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: fileURL))
+                audioPlayer.play()
+            } else {
+                print("No file with specified name exists")
+            }
+        } catch let error {
+            print("Can't play the audio file failed with an error \(error.localizedDescription)")
+        }
+    }
+    
     @IBAction func submitReport() {
-        let report = dataController.createReport(description: (view_?.descriptionTextField.text)!, image: (view_?.imageView.image?.jpegData(compressionQuality: 0.4))!, room: (view_?.roomTextField.text)!, timestamp: Date(), title: (view_?.titleTextField.text)!, userId: userId)
+        let report = dataController.createReport(description: (view_?.descriptionTextField.text)!, image: (view_?.imageView.image?.jpegData(compressionQuality: 0.1))!, room: (view_?.roomTextField.text)!, timestamp: Date(), title: (view_?.titleTextField.text)!, userId: userId)
         dataController.saveReport(report: report)
+        playSound()
         self.dismiss(animated: true, completion: nil)
     }
 }
