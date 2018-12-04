@@ -14,10 +14,12 @@ class ReportViewController: UIViewController, UIImagePickerControllerDelegate, U
     var dataController: DataControllerProtocol!
     var view_: ReportView?
     var userId = Auth.auth().currentUser!.uid
-    
+    var player = AVAudioPlayer()
+
     override func viewDidLoad() {
         view_ = self.view as? ReportView
         dataController = FirebaseDataController.instance
+        playSound()
     }
     
     @IBAction func takePicture() {
@@ -37,16 +39,13 @@ class ReportViewController: UIViewController, UIImagePickerControllerDelegate, U
     }
     
     func playSound() {
+        let soundUrl = Bundle.main.url(forResource: "sound", withExtension: "wav")
         do {
-            if let fileURL = Bundle.main.path(forResource: "sound.mp3", ofType: nil) {
-                let audioPlayer = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: fileURL))
-                audioPlayer.play()
-            } else {
-                print("No file with specified name exists")
-            }
-        } catch let error {
-            print("Can't play the audio file failed with an error \(error.localizedDescription)")
+            try player = AVAudioPlayer(contentsOf: soundUrl!)
+        } catch  {
+            print(error)
         }
+        player.play()
     }
     
     @IBAction func submitReport() {
